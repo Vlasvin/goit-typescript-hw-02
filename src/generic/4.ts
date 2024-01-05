@@ -2,7 +2,10 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
-interface ComponentProps {}
+interface ComponentProps {
+  id: string;
+  className?: string;
+}
 
 class Component<T extends ComponentProps> {
   constructor(public props: T) {}
